@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Play, Video, Camera, Zap, Target, Users, TrendingUp, Eye, Clock } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -124,15 +125,16 @@ const Projects = () => {
               <Play className="w-5 h-5 mr-2" />
               Watch Our Reel
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-white/30 text-white hover:bg-white/20 hover:border-white/50 px-8 py-4 text-lg"
-              onClick={() => navigate('/contact')}
-            >
-              <Target className="w-5 h-5 mr-2" />
-              Start Your Project
-            </Button>
+            <Link to="/#contact">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-white/30 text-white hover:bg-white/20 hover:border-white/50 px-8 py-4 text-lg"
+              >
+                <Target className="w-5 h-5 mr-2" />
+                Start Your Project
+              </Button>
+            </Link>
           </div>
           
           {/* Agency Description */}
@@ -324,10 +326,12 @@ const Projects = () => {
                   Every aspect of video editing is crucial for business marketing success.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" className="bg-gradient-primary hover:shadow-glow">
-                    <Video className="w-5 h-5 mr-2" />
-                    Start Your Project
-                  </Button>
+                  <Link to="/#contact">
+                    <Button size="lg" className="bg-gradient-primary hover:shadow-glow">
+                      <Video className="w-5 h-5 mr-2" />
+                      Start Your Project
+                    </Button>
+                  </Link>
                   <Button variant="outline" size="lg" className="border-border hover:border-primary">
                     <Camera className="w-5 h-5 mr-2" />
                     View Portfolio
