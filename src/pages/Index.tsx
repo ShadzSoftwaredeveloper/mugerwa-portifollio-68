@@ -57,17 +57,17 @@ const Index = () => {
               </div>
             </Link>
             
-            <Link to="/certificates" className="group">
+            <Link to="/graphic-design" className="group">
               <div className="p-8 bg-card border border-border rounded-lg hover:border-primary hover:shadow-elegant transition-all duration-300">
                 <Award className="w-12 h-12 text-accent mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
                 <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
-                  Certifications
+                  Graphic Design
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Professional certifications and achievements
+                  Creative design projects and visual branding work
                 </p>
                 <Button variant="outline" className="border-border hover:border-primary">
-                  View Certificates <ArrowRight className="w-4 h-4 ml-2" />
+                  View Designs <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
               </div>
             </Link>
