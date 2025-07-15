@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
@@ -104,13 +105,26 @@ const Hero = () => {
 
         {/* Social Links */}
         <div className="flex justify-center gap-6 mb-16 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-          <a href="#" className="p-3 rounded-full bg-card border border-border hover:border-primary hover:shadow-glow transition-all duration-300 group">
+          <a 
+            href="https://github.com/shadrachmugerwa" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-card border border-border hover:border-primary hover:shadow-glow transition-all duration-300 group"
+          >
             <Github className="w-6 h-6 text-muted-foreground group-hover:text-primary" />
           </a>
-          <a href="#" className="p-3 rounded-full bg-card border border-border hover:border-accent hover:shadow-glow transition-all duration-300 group">
+          <a 
+            href="https://linkedin.com/in/shadrachmugerwa" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-card border border-border hover:border-accent hover:shadow-glow transition-all duration-300 group"
+          >
             <Linkedin className="w-6 h-6 text-muted-foreground group-hover:text-accent" />
           </a>
-          <a href="#" className="p-3 rounded-full bg-card border border-border hover:border-accent hover:shadow-glow transition-all duration-300 group">
+          <a 
+            href="mailto:shadrach.mugerwa@email.com" 
+            className="p-3 rounded-full bg-card border border-border hover:border-accent hover:shadow-glow transition-all duration-300 group"
+          >
             <Mail className="w-6 h-6 text-muted-foreground group-hover:text-accent" />
           </a>
         </div>
