@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Palette, Layers, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const GraphicDesign = () => {
   const designProjects = [
@@ -92,9 +93,11 @@ const GraphicDesign = () => {
             Creative visual solutions that communicate your brand's story and captivate your audience
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-primary hover:shadow-glow">
-              Start Your Project <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
+            <Link to="/#contact">
+              <Button size="lg" className="bg-gradient-primary hover:shadow-glow">
+                Start Your Project <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
             <Button variant="outline" size="lg">
               View Portfolio
             </Button>
