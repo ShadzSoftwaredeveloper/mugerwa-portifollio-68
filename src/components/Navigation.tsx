@@ -21,7 +21,7 @@ const Navigation = () => {
     { label: 'Home', href: '#', type: 'scroll' },
     { label: 'About', href: '#about', type: 'scroll' },
     { label: 'Skills', href: '#skills', type: 'scroll' },
-    { label: 'Projects', href: '#quick-access', type: 'scroll' },
+    { label: 'Projects', href: '#explore-work', type: 'scroll' },
     { label: 'Contact', href: '#contact', type: 'scroll' }
   ];
 
