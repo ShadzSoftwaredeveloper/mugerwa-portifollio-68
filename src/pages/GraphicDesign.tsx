@@ -103,9 +103,11 @@ const GraphicDesign = () => {
                 Start Your Project <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
-            <Button variant="outline" size="lg">
-              View Portfolio
-            </Button>
+            <Link to="/projects">
+              <Button variant="outline" size="lg">
+                View Portfolio
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -214,12 +216,16 @@ const GraphicDesign = () => {
             Let's collaborate on creating stunning visual designs that make your brand stand out
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-primary hover:shadow-glow">
-              Start Your Project <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-            <Button variant="outline" size="lg">
-              View Full Portfolio
-            </Button>
+            <Link to="/#contact">
+              <Button size="lg" className="bg-gradient-primary hover:shadow-glow">
+                Start Your Project <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
+            <Link to="/projects">
+              <Button variant="outline" size="lg">
+                View Full Portfolio
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
