@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Palette, Layers, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroBackground from "@/assets/graphic-design-hero.jpg";
 
 const GraphicDesign = () => {
   const designProjects = [
@@ -84,8 +85,12 @@ const GraphicDesign = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative py-20 px-6 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10">
-        <div className="max-w-6xl mx-auto text-center">
+      <section 
+        className="relative py-20 px-6 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/60 to-background/80"></div>
+        <div className="max-w-6xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
             Graphic Design
           </h1>
