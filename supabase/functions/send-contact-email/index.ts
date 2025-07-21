@@ -1,7 +1,7 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { Resend } from "npm:resend@2.0.0";
 
-const resend = new Resend("re_QfW1LWQJ_7vPqawH5EtyNe1CJNitfAvgM");
+const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -29,7 +29,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send email to you (the portfolio owner)
     const emailResponse = await resend.emails.send({
       from: "Portfolio Contact <onboarding@resend.dev>",
-      to: ["shadrach.mugerwa@email.com"], // Your email
+      to: ["mugerwashadrach@gmail.com"], // Your email
       subject: `Portfolio Contact: ${subject}`,
       html: `
         <h2>New Contact Form Submission</h2>
