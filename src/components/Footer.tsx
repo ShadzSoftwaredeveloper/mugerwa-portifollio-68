@@ -1,28 +1,31 @@
 import { Github, Linkedin, Mail, Heart } from "lucide-react";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:shadrach.mugerwa@email.com", label: "Email" }
-  ];
-
+  const socialLinks = [{
+    icon: Github,
+    href: "#",
+    label: "GitHub"
+  }, {
+    icon: Linkedin,
+    href: "#",
+    label: "LinkedIn"
+  }, {
+    icon: Mail,
+    href: "mailto:shadrach.mugerwa@email.com",
+    label: "Email"
+  }];
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <footer className="bg-card border-t border-border">
+  return <footer className="bg-card border-t border-border">
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
-            <button 
-              onClick={scrollToTop}
-              className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
-            >
+            <button onClick={scrollToTop} className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
               Mugerwa Shadrach
             </button>
             <p className="text-muted-foreground leading-relaxed">
@@ -35,15 +38,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Quick Links</h3>
             <nav className="flex flex-col space-y-2">
-              {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => document.getElementById(item.toLowerCase())?.scrollIntoView({ behavior: 'smooth' })}
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300 text-left"
-                >
-                  {item}
-                </button>
-              ))}
+              {['About', 'Skills', 'Projects', 'Contact'].map(item => {})}
             </nav>
           </div>
 
@@ -51,23 +46,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Get In Touch</h3>
             <div className="space-y-2 text-muted-foreground">
-              <p>Kampala, Uganda</p>
-              <p>shadrach.mugerwa@email.com</p>
-              <p>+256 123 456 789</p>
+              
+              
+              
             </div>
             
             {/* Social Links */}
             <div className="flex gap-3 pt-2">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="p-2 bg-secondary rounded-lg border border-border hover:border-primary hover:shadow-glow transition-all duration-300 group"
-                >
+              {socialLinks.map(social => <a key={social.label} href={social.href} aria-label={social.label} className="p-2 bg-secondary rounded-lg border border-border hover:border-primary hover:shadow-glow transition-all duration-300 group">
                   <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-300" />
-                </a>
-              ))}
+                </a>)}
             </div>
           </div>
         </div>
@@ -87,8 +75,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
