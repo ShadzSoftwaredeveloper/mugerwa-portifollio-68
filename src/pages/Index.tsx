@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
-import Contact from "@/components/Contact";
+
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, FolderOpen } from "lucide-react";
@@ -75,7 +75,7 @@ const Index = () => {
         </div>
       </section>
       
-      <Contact />
+      
       <Footer />
     </div>
   );

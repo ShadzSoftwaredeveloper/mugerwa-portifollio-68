@@ -22,7 +22,7 @@ const Navigation = () => {
     { label: 'About', href: '#about', type: 'scroll' },
     { label: 'Skills', href: '#skills', type: 'scroll' },
     { label: 'Projects', href: '#explore-work', type: 'scroll' },
-    { label: 'Contact', href: '#contact', type: 'scroll' }
+    { label: 'Contact', href: '/contact', type: 'link' }
   ];
 
   const location = useLocation();
@@ -92,12 +92,11 @@ const Navigation = () => {
                 </button>
               )
             ))}
-            <Button 
-              onClick={() => handleNavClick({ label: 'Contact', href: '#contact', type: 'scroll' })}
-              className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
-            >
-              Hire Me
-            </Button>
+            <Link to="/contact">
+              <Button className="bg-gradient-primary hover:shadow-glow transition-all duration-300">
+                Hire Me
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -133,12 +132,11 @@ const Navigation = () => {
                   </button>
                 )
               ))}
-              <Button 
-                onClick={() => handleNavClick({ label: 'Contact', href: '#contact', type: 'scroll' })}
-                className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300"
-              >
-                Hire Me
-              </Button>
+              <Link to="/contact" onClick={() => setIsOpen(false)}>
+                <Button className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300">
+                  Hire Me
+                </Button>
+              </Link>
             </div>
           </div>
         )}
