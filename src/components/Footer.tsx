@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import logoImage from "@/assets/logo.png";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const socialLinks = [{
@@ -25,8 +26,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
-            <button onClick={scrollToTop} className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
-              Mugerwa Shadrach
+            <button onClick={scrollToTop} className="flex items-center gap-3 hover:scale-105 transition-transform duration-300">
+              <img src={logoImage} alt="Logo" className="w-10 h-10 rounded-lg" />
+              <span className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+                Mugerwa Shadrach
+              </span>
             </button>
             <p className="text-muted-foreground leading-relaxed">
               Full-Stack Developer passionate about creating exceptional digital experiences 
@@ -38,7 +42,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Quick Links</h3>
             <nav className="flex flex-col space-y-2">
-              {['About', 'Skills', 'Projects', 'Contact'].map(item => {})}
+              {['About', 'Skills', 'Projects', 'Contact'].map(item => (
+                <button key={item} className="text-muted-foreground hover:text-primary transition-colors duration-300">
+                  {item}
+                </button>
+              ))}
             </nav>
           </div>
 
