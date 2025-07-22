@@ -188,7 +188,11 @@ const CodingProjects = () => {
               <Github className="w-5 h-5 mr-2" />
               View All Projects
             </Button>
-            <Button variant="outline" size="lg">
+            <Button 
+              variant="outline" 
+              size="lg"
+              onClick={() => window.location.href = '/contact'}
+            >
               Get In Touch
             </Button>
           </div>

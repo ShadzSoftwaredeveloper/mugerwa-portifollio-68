@@ -97,7 +97,7 @@ const Hero = () => {
             variant="outline" 
             size="lg" 
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            onClick={scrollToContact}
+            onClick={() => window.location.href = '/contact'}
           >
             Get In Touch
           </Button>

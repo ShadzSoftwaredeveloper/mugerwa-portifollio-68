@@ -231,6 +231,7 @@ const Projects = () => {
                     <Button 
                       size="sm" 
                       className="flex-1 bg-gradient-primary hover:shadow-glow"
+                      onClick={() => window.open('https://youtube.com', '_blank')}
                     >
                       <Play className="w-4 h-4 mr-2" />
                       Watch Video
