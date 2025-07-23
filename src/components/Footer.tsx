@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, Heart } from "lucide-react";
 import logoImage from "@/assets/logo.png";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const socialLinks = [{
@@ -85,4 +86,5 @@ const Footer = () => {
       </div>
     </footer>;
 };
+
 export default Footer;
