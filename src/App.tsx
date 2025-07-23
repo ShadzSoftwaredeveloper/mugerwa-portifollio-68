@@ -1,5 +1,4 @@
 
-import { useState } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,7 +7,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SocialMediaFloat from "@/components/SocialMediaFloat";
 import PWAInstall from "@/components/PWAInstall";
-import LoadingScreen from "@/components/LoadingScreen";
 import Index from "./pages/Index";
 import ProjectsPage from "./pages/Projects";
 import CodingProjects from "./pages/CodingProjects";
@@ -19,18 +17,7 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleLoadingComplete = () => {
-    setIsLoading(false);
-  };
-
-  if (isLoading) {
-    return <LoadingScreen onComplete={handleLoadingComplete} />;
-  }
-
-  return (
+const App = () => (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider
       attribute="class"
@@ -58,7 +45,6 @@ const App = () => {
       </TooltipProvider>
     </ThemeProvider>
   </QueryClientProvider>
-  );
-};
+);
 
 export default App;
