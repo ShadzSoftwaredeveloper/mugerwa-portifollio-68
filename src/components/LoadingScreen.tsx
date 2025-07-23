@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logoImage from "@/assets/logo.png";
+const logoImage = "/lovable-uploads/dc7bc890-d3fa-49b6-86ee-61ed6f41bbb1.png";
 
 interface LoadingScreenProps {
   onComplete: () => void;
