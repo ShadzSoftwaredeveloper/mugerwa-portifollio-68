@@ -10,11 +10,12 @@ const Hero = () => {
   
   const skills = [
     'Full-Stack Developer',
-    'React Specialist',
+    'Video Producer',
     'UI/UX Designer',
     'Mobile App Developer',
-    'Database Expert',
-    'Cloud Architect'
+    'Graphic Designer',
+    'Web Developer',
+    'Motion Designer',
   ];
 
   const scrollToNext = () => {

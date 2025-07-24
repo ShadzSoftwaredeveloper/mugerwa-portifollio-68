@@ -6,16 +6,16 @@ const Skills = () => {
     {
       title: "Frontend Development",
       skills: [
-        "React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", 
-        "Tailwind CSS", "Sass", "Redux", "Zustand", "React Router"
+        "React",   "TypeScript", "JavaScript", "HTML5", "CSS3", 
+        "Tailwind CSS",  "React Router"
       ],
       gradient: "bg-gradient-primary"
     },
     {
       title: "Backend Development", 
       skills: [
-        "Node.js", "Express.js", "Python", "Django", "FastAPI", "PostgreSQL", 
-        "MongoDB", "Redis", "REST APIs", "GraphQL", "JWT"
+        "Node.js", "Express.js",  "FastAPI",  
+        "MongoDB",  "REST APIs", 
       ],
       gradient: "bg-gradient-accent"
     },
@@ -28,7 +28,7 @@ const Skills = () => {
       gradient: "bg-gradient-primary"
     },
     {
-      title: "DevOps & Tools",
+      title: "Motion Designer",
       skills: [
         "Git", "GitHub", "Docker", "AWS", "Vercel", "Netlify", "CI/CD", 
         "Linux", "Bash", "VS Code", "Figma", "Postman"

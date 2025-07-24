@@ -58,7 +58,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
           Mugerwa Shadrach
         </h1>
         <p className="text-muted-foreground mt-2 animate-slide-in">
-          Digital Portfolio
+          Shadzmedia.ug
         </p>
       </div>
 

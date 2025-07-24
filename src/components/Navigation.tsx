@@ -18,11 +18,11 @@ const Navigation = () => {
   }, []);
 
   const menuItems = [
-    { label: 'Home', href: '#', type: 'scroll' },
-    { label: 'About', href: '#about', type: 'scroll' },
+    // { label: 'Home', href: '#', type: 'scroll' },
+    { label: 'About Me', href: '#about', type: 'scroll' },
     { label: 'Skills', href: '#skills', type: 'scroll' },
-    { label: 'Projects', href: '#explore-work', type: 'scroll' },
-    { label: 'Contact', href: '/contact', type: 'link' }
+    { label: 'My Projects', href: '#explore-work', type: 'scroll' },
+    // { label: 'Contact', href: '/contact', type: 'link' }
   ];
 
   const location = useLocation();
@@ -53,7 +53,7 @@ const Navigation = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link 
             to="/"
@@ -62,7 +62,7 @@ const Navigation = () => {
             <img 
               src={logoImage} 
               alt="Mugerwa Shadrach Logo" 
-              className="w-10 h-10 object-contain"
+              className="w-20 h- object-contain"
             />
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               Mugerwa Shadrach

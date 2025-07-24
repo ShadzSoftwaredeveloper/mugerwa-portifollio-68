@@ -15,14 +15,14 @@ const SocialMediaFloat = () => {
   const allIcons = [
     {
       icon: <Github className="h-4 w-4" />,
-      href: "https://github.com/yourusername",
+      href: "https://github.com/ShadzSoftwaredeveloper",
       label: "GitHub",
       isShare: false,
       isTheme: false
     },
     {
       icon: <MessageCircle className="h-4 w-4" />,
-      href: "https://wa.me/yourphonenumber",
+      href: "https://wa.me/0769796562",
       label: "WhatsApp",
       isShare: false,
       isTheme: false
@@ -36,14 +36,14 @@ const SocialMediaFloat = () => {
     },
     {
       icon: <Video className="h-4 w-4" />,
-      href: "https://tiktok.com/@yourusername",
+      href: "https://www.tiktok.com/@shadzmedia.ug",
       label: "TikTok",
       isShare: false,
       isTheme: false
     },
     {
       icon: <Facebook className="h-4 w-4" />,
-      href: "https://facebook.com/yourusername",
+      href: "https://www.facebook.com/mugerwa.shadrch/",
       label: "Facebook",
       isShare: false,
       isTheme: false
@@ -57,14 +57,14 @@ const SocialMediaFloat = () => {
     },
     {
       icon: <Linkedin className="h-4 w-4" />,
-      href: "https://linkedin.com/in/yourusername",
+      href: "https://www.linkedin.com/in/shadz-mediaug-121802369/",
       label: "LinkedIn",
       isShare: false,
       isTheme: false
     },
     {
       icon: <Mail className="h-4 w-4" />,
-      href: "mailto:your.email@example.com",
+      href: "mailto:your.mugerwashadrach@gmail.com",
       label: "Email",
       isShare: false,
       isTheme: false

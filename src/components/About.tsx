@@ -77,9 +77,9 @@ const About = () => {
           <div className="relative">
             {/* Profile Image */}
             <div className="mb-6 relative">
-              <div className="w-64 h-64 mx-auto bg-gradient-subtle rounded-2xl border border-border overflow-hidden hover:shadow-glow transition-all duration-300">
+              <div className="w-64  mx-auto bg-gradient-subtle rounded-2xl border border-border overflow-hidden hover:shadow-glow transition-all duration-300">
                 <img 
-                  src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=400&fit=crop&crop=face" 
+                  src="https://github.com/ShadzSoftwaredeveloper/mugerwa-portifollio-68/blob/main/src/assets/about3.jpg" 
                   alt="Mugerwa Shadrach - Profile Photo"
                   className="w-full h-full object-cover"
                 />
