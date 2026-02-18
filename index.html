@@ -1,51 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mugerwa shadrach software development portifollio</title>
-    
-    <meta name="author" content="shadz-dev" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta property="og:title" content="mugerwa shadrach portifollio" />
-    <meta property="og:description" content=
-     Passionate full-stack developer with expertise in modern web technologies. I love building applications that make a difference and solving complex challenges ..As an influencer and content production agency, we specialize in producing multi-channel native  content and campaign assets.
-     we advertise through Video editing is very crucial, and every aspect is very important towards business marketing. " />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="./assets/about3.jpg" />
+  <!-- Primary SEO -->
+  <title>Mugerwa Shadrach | Full-Stack Software Developer Portfolio</title>
+  <meta name="description" content="Mugerwa Shadrach is a passionate full-stack software developer specializing in modern web technologies. Building scalable applications and solving real-world problems." />
+  <meta name="keywords" content="Mugerwa Shadrach, Shadrach developer, Full-stack developer, Web developer Uganda, React developer, Software engineer portfolio" />
+  <meta name="author" content="Mugerwa Shadrach" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- PWA Configuration -->
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#8B5CF6">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Shadrach Portfolio">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/icon-192x192.png" type="image/png">
- 
-  </head>
+  <!-- Canonical URL (Replace with your real domain) -->
+  <link rel="canonical" href="https://yourdomain.com/" />
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    
-    <!-- Service Worker Registration -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then((registration) => {
-              console.log('SW registered: ', registration);
-            })
-            .catch((registrationError) => {
-              console.log('SW registration failed: ', registrationError);
-            });
-        });
-      }
-    </script>
-  </body>
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="Mugerwa Shadrach | Full-Stack Developer Portfolio" />
+  <meta property="og:description" content="Explore projects, skills, and experience of Mugerwa Shadrach — a modern full-stack developer building impactful web applications." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mugerwa Shadrach | Full-Stack Developer" />
+  <meta name="twitter:description" content="Full-stack developer specializing in modern web technologies and scalable applications." />
+  <meta name="twitter:image" content="https://yourdomain.com/og-image.jpg" />
+
+  <!-- PWA -->
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#8B5CF6" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Shadrach Portfolio" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/icon-192x192.png" type="image/png" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+
+  <!-- Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then((registration) => {
+            console.log('Service Worker registered:', registration);
+          })
+          .catch((error) => {
+            console.log('Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+</body>
 </html>
