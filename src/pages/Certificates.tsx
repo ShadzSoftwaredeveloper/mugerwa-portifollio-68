@@ -46,7 +46,7 @@ const CertificatesPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" id="certificates">
       <Navigation />
       
       <section className="py-20 px-6">

@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Play, Video, Camera, Zap, Target, Users, TrendingUp, Eye, Clock } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import bgImage from '../../src/assets/bg.jpg';
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -98,58 +99,61 @@ const Projects = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-32 px-6 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5760&q=80')"}}>
-        <div className="absolute inset-0 bg-black/60"></div>
-        <div className="max-w-6xl mx-auto text-center relative z-10">
-          <div className="mb-8">
-            <Badge className="mb-6 bg-primary/10 text-primary border-primary/30 px-4 py-2">
-              <Video className="w-4 h-4 mr-2" />
-              Video Production Agency
-            </Badge>
-          </div>
-          
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 text-white drop-shadow-lg leading-tight">
-            Explore the Best Video Production Projects
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
-            With special visual effects, boost your brand with top-notch visuals and expert storytelling
-          </p>
-          
-          <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-12">
-            <Button 
-              size="lg" 
-              className="bg-gradient-primary hover:shadow-glow px-8 py-4 text-lg"
-              onClick={() => window.open('https://youtube.com', '_blank')}
-            >
-              <Play className="w-5 h-5 mr-2" />
-              Watch Our Reel
-            </Button>
-            <Link to="/#contact">
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-white/30 text-white hover:bg-white/20 hover:border-white/50 px-8 py-4 text-lg"
-              >
-                <Target className="w-5 h-5 mr-2" />
-                Start Your Project
-              </Button>
-            </Link>
-          </div>
-          
-          {/* Agency Description */}
-          <div className="max-w-4xl mx-auto bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 space-y-6">
-            <h2 className="text-2xl font-bold text-foreground">
-              Influencer & Content Production Agency
-            </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              As an influencer and content production agency, we specialize in producing multi-channel 
-              native content and campaign assets. Video editing is very crucial, and every aspect is 
-              very important towards business marketing.
-            </p>
-          </div>
-        </div>
-      </section>
+      <section
+  className="relative py-32 px-6 bg-cover bg-center bg-no-repeat "
+  style={{ backgroundImage: `url(${bgImage})` }}
+>
+  <div className="absolute inset-0 bg-black/60"></div>
+  <div className="max-w-6xl mx-auto text-center relative z-10">
+    <div className="mb-8">
+      {/* <Badge className="mb-6 bg-primary/10 text-primary border-primary/30 px-4 py-2">
+        <Video className="w-4 h-4 mr-2" />
+        Video Production Agency
+      </Badge> */}
+    </div>
+
+    <h1 className="text-5xl md:text-4xl font-bold mb-8 text-white drop-shadow-lg leading-tight">
+      Explore the Best Video Production Projects
+    </h1>
+
+    <p className="text-xl md:text-1xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
+      With special visual effects, boost your brand with top-notch visuals and expert storytelling
+    </p>
+
+    <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-12">
+      <Button
+        size="lg"
+        className="bg-gradient-primary hover:shadow-glow px-8 py-4 text-lg"
+        onClick={() => window.open('https://yhttps://www.youtube.com/@shadzmedia.ug.outube.com', '_blank')}
+      >
+        <Play className="w-5 h-5 mr-2" />
+        Watch Our Reel
+      </Button>
+      <Link to="/#contact">
+        <Button
+          variant="outline"
+          size="lg"
+          className="border-white/30 text-white hover:bg-white/20 hover:border-white/50 px-8 py-4 text-lg"
+        >
+          <Target className="w-5 h-5 mr-2" />
+          Start Your Project
+        </Button>
+      </Link>
+    </div>
+
+    {/* Agency Description */}
+    <div className="max-w-4xl mx-auto bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 space-y-6">
+      <h2 className="text-2xl font-bold text-foreground">
+        Influencer & Content Production Agency
+      </h2>
+      <p className="text-muted-foreground leading-relaxed">
+        As an influencer and content production agency, we specialize in producing multi-channel
+        native content and campaign assets. Video editing is very crucial, and every aspect is
+        very important towards business marketing.
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* Featured Projects */}
       <section id="projects" className="py-20 px-6">

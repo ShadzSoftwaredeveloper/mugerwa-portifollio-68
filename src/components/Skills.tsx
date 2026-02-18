@@ -22,7 +22,7 @@ const Skills = () => {
     {
       title: "Mobile Development",
       skills: [
-        "React Native", "Flutter", "Expo", "Android Studio", "iOS Development",
+        "React Native", "Android Studio", "iOS Development",
         "Cross-platform", "Native APIs", "Push Notifications"
       ],
       gradient: "bg-gradient-primary"

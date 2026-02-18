@@ -22,7 +22,8 @@ const Navigation = () => {
     { label: 'About Me', href: '#about', type: 'scroll' },
     { label: 'Skills', href: '#skills', type: 'scroll' },
     { label: 'My Projects', href: '#explore-work', type: 'scroll' },
-    // { label: 'Contact', href: '/contact', type: 'link' }
+    // { label: 'Contact', href: '/contact', type: 'link' },
+    { label: 'certificates', href: '/certificates', type: 'link' },
   ];
 
   const location = useLocation();

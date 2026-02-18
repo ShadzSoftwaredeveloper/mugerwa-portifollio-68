@@ -63,20 +63,20 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "shadrach.mugerwa@email.com",
-      link: "mailto:shadrach.mugerwa@email.com"
+      value: "mugerwashadrach@gmail.com",
+      link: "mailto:mugerwashadrach@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+256 123 456 789",
-      link: "tel:+256123456789"
+      value: "+256 740 397 395",
+      link: "tel:+25670397395"
     },
     {
       icon: MapPin,
       title: "Location",
       value: "Kampala, Uganda",
-      link: "#"
+      link: "https://maps.app.goo.gl/wVktjcoqeczvk2Mq9"
     }
   ];
 
@@ -84,19 +84,19 @@ const Contact = () => {
     {
       icon: Github,
       name: "GitHub",
-      url: "https://github.com/mugerwa-shadrach",
+      url: "https://github.com/ShadzSoftwaredeveloper",
       color: "hover:text-foreground"
     },
     {
       icon: Linkedin,
       name: "LinkedIn", 
-      url: "https://linkedin.com/in/mugerwa-shadrach",
+      url: "https://www.linkedin.com/in/shadz-mediaug-121802369/",
       color: "hover:text-accent"
     },
     {
       icon: Twitter,
-      name: "Twitter",
-      url: "https://twitter.com/mugerwa_shadrach",
+      name: "Facebook",
+      url: "https://www.facebook.com/mugerwa.shadrch/",
       color: "hover:text-primary"
     }
   ];

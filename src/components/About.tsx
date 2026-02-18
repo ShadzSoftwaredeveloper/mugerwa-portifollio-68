@@ -3,6 +3,7 @@ import { Code, Lightbulb, Rocket, Users } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
+import profilePhoto from '../../src/assets/about3.jpg';
 
 const About = () => {
   const isMobile = useIsMobile();
@@ -77,13 +78,13 @@ const About = () => {
           <div className="relative">
             {/* Profile Image */}
             <div className="mb-6 relative">
-              <div className="w-64  mx-auto bg-gradient-subtle rounded-2xl border border-border overflow-hidden hover:shadow-glow transition-all duration-300">
-                <img 
-                  src="https://github.com/ShadzSoftwaredeveloper/mugerwa-portifollio-68/blob/main/src/assets/about3.jpg" 
-                  alt="Mugerwa Shadrach - Profile Photo"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <div className="w-64 h-64 mx-auto bg-gradient-subtle rounded-2xl border border-border overflow-hidden hover:shadow-glow transition-all duration-300">
+  <img 
+    src={profilePhoto} 
+    alt="Mugerwa Shadrach - Profile Photo"
+    className="w-full  object-cover"
+  />
+</div>
               <div className="absolute -top-2 -right-2 w-6 h-6 bg-success rounded-full border-2 border-background animate-glow-pulse" />
             </div>
 
