@@ -72,10 +72,10 @@ const Hero = () => {
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
         <div className="animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            Mugerwa
+            .
           </h1>
           <h2 className="text-4xl md:text-6xl font-bold mb-8 text-foreground">
-            Shadrach
+            I am Mugerwa Shadrach
           </h2>
           <div className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             <span className="text-primary font-semibold">{displayText}</span>
@@ -105,7 +105,7 @@ const Hero = () => {
         </div>
 
         {/* Social Links */}
-        <div className="flex justify-center gap-6 mb-16 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+        <div className="flex justify-center gap-6 mb-15 animate-fade-in" style={{ animationDelay: '0.5s' }}>
           <a 
             href="https://github.com/shadrachmugerwa" 
             target="_blank" 
