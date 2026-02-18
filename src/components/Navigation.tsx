@@ -66,7 +66,7 @@ const Navigation = () => {
               className="w-20 h- object-contain"
             />
             <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Mugerwa Shadrach
+              {/* Mugerwa Shadrach */}
             </span>
           </Link>
 
