@@ -1,0 +1,21 @@
+# Robots.txt for Mugerwa Shadrach Portfolio
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /dist/
+
+# Sitemap location
+Sitemap: https://www.shadzmediaug.tech/sitemap.xml
+
+# Search engine specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
